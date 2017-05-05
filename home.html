@@ -22,11 +22,26 @@
 		<button class="classesButton" id="geometryButton">Geometry</button>
 		<button class="classesButton" id="english1Button">English 1</button>
 		<button class='classesButton' id='worldGeographyButton'>World Geography</button>
+		<button class="classesButton" id="favoriteButton">Favorites</button>
 	</div>
 
-	<div id="physicsEquations" class="hidden"><div><p class="equationText">Change in X = 1/2 A T^2 + V0 + T</p><button class="favorite">favorite</button></div></div>
-	<div id="geometryEquations" class="hidden"><div><p class="equationText">A^2 + B^2 = C^2</p><button class="favorite">favorite</button></div></div>
+	<div id="physicsEquations" class="hidden classDiv">
+		<div class="equation"><p class="equationText">Δx = 1/2 a t^2 + V + t</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">V = at</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">a = V/t</p><button class="favoriteButton">Favorite</button></div>
+	</div>
 
+	<div id="geometryEquations" class="hidden classDiv">
+		<div class="equation"><p class="equationText">A^2 + B^2 = C^2</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">A = B * H</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">A = 1/2 a P</p><button class="favoriteButton">Favorite</button></div>
+	</div>
+
+	<div id="english1Equations" class='hidden classDiv'>
+		<div class="equation"><p class="equationText">Logos - Factual Information</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">Pathos - Emotional Information</p><button class="favoriteButton">Favorite</button></div>
+		<div class="equation"><p class="equationText">Ethos - Trustworthy Personal Information</p><button class="favoriteButton">Favorite</button></div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>

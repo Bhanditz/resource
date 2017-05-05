@@ -64,12 +64,22 @@ header {
 	align-content: center;
 }
 
+.classDiv {
+	display: flex;
+	flex-direction: column;
+}
+
 .classesButton {
 	display: flex;
 	align-items: center;
+	align-self: center;
 	height: 40px;
 	font-size: 20px;
 	background-color: #a8a8a8;
+}
+
+.favorite {
+	margin-left: 10px;
 }
 
 .equation {
