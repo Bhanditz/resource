@@ -1,5 +1,6 @@
 body {
-	background-color: #;
+	background-color: #a9a9a9;
+	margin-top: 240px;
 }
 
 header {
@@ -47,14 +48,31 @@ header {
 }
 
 #classesBar {
-	position: fixed;
+	position: absolute;
 	top: 120px;
 	left: 0px;
 	width: 100%;
 	height: 120px;
 	background-color: #c9c9c9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
 }
 
 .classesButton {
-	
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-size: 20px;
+	background-color: #a8a8a8;
+}
+
+.equation {
+	display: flex;
+	flex-direction: row;
+}
+
+.hidden {
+	display: none;
 }
