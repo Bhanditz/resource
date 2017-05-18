@@ -4,16 +4,15 @@ var previousClass = '';
 $(document).ready(function() {
 	console.log('jQuery Ready!');
 	$('#titleButton').click(function() {
-		window.location = 'home.html';
+		window.location = 'index.html';
 	})
 	$('#classesButton').click(function() {
-		alert('Not Yet Implemented');
-	})
-	$('#optionsButton').click(function() {
-		alert('Not Yet Implemented');
+		$(this).toggleClass('favorited');
+		$('#classes').toggleClass('hidden');
+		$('#classes').toggleClass('classesBar')
 	})
 	$('#logOutButton').click(function() {
-		alert('Not Yet Implemented');
+		alert('Accounts not yet Implemented');
 	})
 	$('#physics1Button').click(function() {
 		previousClass = activeClass;
@@ -30,6 +29,17 @@ $(document).ready(function() {
 		activeClass = 'english1';
 		displayEquations();
 	})
+	$('.favoriteButton').click(function() {
+		$(this).parent().toggleClass('favorited');
+	})
+	$('#noneButton').click(function() {
+		previousClass = activeClass;
+		activeClass = 'none'
+		displayEquations();
+	})
+	$('#enterButton').click(function() {
+		window.location = 'home.html';	
+	})
 })
 
 function displayEquations() {
@@ -44,6 +54,9 @@ function displayEquations() {
 			break;
 		case 'english1':
 			$('#english1Equations').toggleClass('hidden').toggleClass('equation');
+			removePreviousClass();
+			break;
+		case 'none':
 			removePreviousClass();
 		default:
 			break;

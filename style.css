@@ -51,7 +51,7 @@ header {
 	border-radius: 10px;
 }
 
-#classesBar {
+.classesBar {
 	position: fixed;
 	top: 120px;
 	left: 0px;
@@ -82,11 +82,15 @@ header {
 	margin-left: 10px;
 }
 
-.equation {
+.individualEquation {
 	display: flex;
 	flex-direction: row;
 }
 
 .hidden {
 	display: none;
+}
+
+.favorited {
+	background-color: #a9a9a9;
 }
