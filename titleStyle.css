@@ -3,11 +3,21 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #a9a9a8;
+	background-color: #88BBD6;
 	font-size: 50px;
 }
 
 #enterButton {
 	width: 75%;
 	height: 100px;
+	background-color: #99D3DF;
+	border-radius: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-size: 30px;
+}
+
+#titlePageTitle {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
 }
