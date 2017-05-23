@@ -93,3 +93,9 @@ header {
 .favorited {
 	background-color: #a9a9a9;
 }
+
+.favoriteButton {
+	margin-left: 15px;
+	margin-top: 15px;
+	border-radius: 10px;
+}
